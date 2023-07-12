@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: azure;
+    color: #757575;
+    width: 100%;
+}
+/* img */
+
+.banner{
+    width: 100%;
+}
+
+.logo {
+    width: 127px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 138px;
+}
+
+/* SEARCH */
+.head{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.search{
+    display: flex;
+    font-size: 12px;
+    font-weight: 20px;
+    gap: 10px;
+    background-color: #edd4d45f;
+    color: white;
+    align-self:center;
+    align-content: center;
+}
+
+/* underhead */
+.box-search{
+    width: 688px;
+    height: 45px;
+    display: block;
+    
+    padding-left: 5px;
+    margin-left: 76px;
+    }
+.underhead{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    
+}
+.cart{
+    margin-top: 12px;
+}
+
+
+
+/* category */
+a {
+    text-decoration: none;
+    color: #757575;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+.menu {
+    
+    margin-left: 138px;
+    position: relative;
+    z-index: 100;
+    background-color: aliceblue;
+    /* background-color: aliceblue; */
+}
+
+.menu-item {
+    width: 200px;
+    /* position: relative; */
+}
+
+.menu-item p,.sub-menu-1 p {
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 27px;
+    line-height: 27px;
+    text-decoration: none;
+    font-size: 13px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item p .icon {
+    display: none;
+}
+
+.menu-item:hover > p,
+.menu-item:hover > p a {
+    color: chocolate;
+}
+
+.menu-item:hover > p .icon,
+.menu-item:hover > p .icon {
+    display: inline-block;
+    color: chocolate;
+}
+
+.sub-menu {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+   
+    display: none;
+    background-color: aliceblue;
+    height: 100%;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+.sub-menu-1 {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    
+    display: none;
+    background-color: aliceblue;
+    height: 100%;
+}
+.sub-menu .menu-item:hover .sub-menu-1{
+    display: block;
+}
+.category{
+    display: flex;
+}
+.category1{
+    width: 1000px;
+    height: 189px;
+}
+
+
+
+/* Có 5 thuộc tính position:
+- Static (mặc định - không áp dụng được bất kỳ thuộc tính)
+- Relative (vẫn xuất hiện ở vị trí ban đầu, có thể dùng top, left, right, bottom, z-index, và không ảnh hưởng đến những phần tử xung quanh nó) => thường dùng để làm mốc căn cho các phần tử absolute/căn theo chính nó
+- Absolute (những phần tử xung quanh sẽ coi như nó không tồn tại,  => sử dụng cho các tính năng như menu đa cấp) => Căn theo vị trí của phần tử cha gần nhất có position khác static => Nếu không có phần tử cha nào khác static => căn theo màn hình
+- Fixed: Căn theo màn hình */
