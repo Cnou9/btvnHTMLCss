@@ -71,4 +71,39 @@ body {
   
   /* Thêm các tùy chỉnh khác tại đây để tạo nhiều biểu tượng khác */
   
+  .wavy{
+    display: flex;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 4px;
+    left: 600px;
+    width: 500px;
+    height: 500px;
+    font-size: 48px;
+    font-family: sans-serif;
+    
+    color: rgb(231, 191, 191);
+    background-color: blueviolet;
+  }
+  .wavy span{
+    animation: wave 1s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+  }
+
+  @keyframes wave {
+    0%{
+      transform: translateY(0px);
+    }
+    20%{
+      transform: translateY(-30px);
+    }
+    40%,100%{
+      transform: translateY(0px);
+    }
+    
+  }
+
   
